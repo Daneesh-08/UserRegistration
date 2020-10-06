@@ -12,6 +12,7 @@ namespace UserRegistration
         public static string EmailREGEX = "^[0-9a-zA-Z]+[.+-_]{0,1}[0-9a-zA-Z]+[@][a-zA-Z]+[.][a-zA-Z]{2,3}([.][a-zA-Z]{2,3}){0,1}";
         public static string MobileNumREGEX = "^[9]{1}[1]{1}[ ]{1}[6-9]{1}[0-9]{9}$";
         public static string Condition1REGEX = "^[A-Za-z0-9@$!%*#?&]{8,}$";
+        public static string Condition2REGEX = "^(?=.*?[A-Z])[A-Za-z0-9@$!%*#?&]{8,}$";
 
         public bool ValidFirstName(string name)
         {
@@ -32,6 +33,10 @@ namespace UserRegistration
         public bool ValidCondition1(string password)
         {
             return Regex.IsMatch(password, Condition1REGEX); ;
+        }
+        public bool ValidCondition2(string password)
+        {
+            return Regex.IsMatch(password, Condition2REGEX); ;
         }
     }
 }
