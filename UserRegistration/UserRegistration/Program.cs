@@ -33,8 +33,8 @@ namespace UserRegistration
             else
                 Console.WriteLine("Mobile Number is INVALID !!");
             Console.WriteLine("Enter Password :");
-            string Rule3 = Console.ReadLine();
-            if (regex.ValidCondition3(Rule3))
+            string Rule4 = Console.ReadLine();
+            if (regex.ValidCondition4(Rule4))
                 Console.WriteLine("Password is VALID !!");
             else
                 Console.WriteLine("Password is INVALID !!");
