@@ -38,6 +38,12 @@ namespace UserRegistration
                 Console.WriteLine("Password is VALID !!");
             else
                 Console.WriteLine("Password is INVALID !!");
+            Console.WriteLine("Enter Sample Emails to Test :");
+            string sampleemail = Console.ReadLine();
+            if (regex.SampleEmail(sampleemail))
+                Console.WriteLine("Sample Email is VALID !!");
+            else
+                Console.WriteLine("Sample Email is INVALID !!");
         }
     }
 }
