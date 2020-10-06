@@ -20,6 +20,12 @@ namespace UserRegistration
                 Console.WriteLine("Last Name is VALID !!");
             else
                 Console.WriteLine("Last Name is INVALID !!");
+            Console.WriteLine("Enter Email :");
+            string email = Console.ReadLine();
+            if (regex.ValidEmail(email))
+                Console.WriteLine("Email is VALID !!");
+            else
+                Console.WriteLine("Email is INVALID !!");
         }
     }
 }
