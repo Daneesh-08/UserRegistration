@@ -26,6 +26,12 @@ namespace UserRegistration
                 Console.WriteLine("Email is VALID !!");
             else
                 Console.WriteLine("Email is INVALID !!");
+            Console.WriteLine("Enter Mobile Number :");
+            string mobilenum = Console.ReadLine();
+            if (regex.ValidMobile(mobilenum))
+                Console.WriteLine("Mobile Number is VALID !!");
+            else
+                Console.WriteLine("Mobile Number is INVALID !!");
         }
     }
 }
