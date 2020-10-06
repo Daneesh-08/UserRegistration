@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace UserRegistration
 {
@@ -7,12 +8,18 @@ namespace UserRegistration
         static void Main(string[] args)
         {
             Console.WriteLine("Enter First Name :");
-            string name = Console.ReadLine();
+            string firstname = Console.ReadLine();
             RegeX regex = new RegeX();
-            if (regex.ValidFirstName(name))
+            if (regex.ValidFirstName(firstname))
                 Console.WriteLine("First Name is VALID !!");
             else
                 Console.WriteLine("First Name is INVALID !!");
+            Console.WriteLine("Enter Last Name :");
+            string lastname = Console.ReadLine();
+            if (regex.ValidLastName(lastname))
+                Console.WriteLine("Last Name is VALID !!");
+            else
+                Console.WriteLine("Last Name is INVALID !!");
         }
     }
 }
