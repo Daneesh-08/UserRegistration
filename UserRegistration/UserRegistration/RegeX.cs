@@ -35,16 +35,16 @@ namespace UserRegistration
         }
         public bool ValidCondition1(string password)
         {
-            return Regex.IsMatch(password, Condition1REGEX); ;
+            return Regex.IsMatch(password, Condition1REGEX); 
         }
 
         public bool ValidCondition4(string password)
         {
-            return Regex.IsMatch(password, Condition4REGEX); ;
+            return Regex.IsMatch(password, Condition4REGEX); 
         }
         public bool SampleEmail(string email)
         {
-            return Regex.IsMatch(email, SampleEmailREGEX); ;
+            return Regex.IsMatch(email, SampleEmailREGEX);
         }
     }
 }
