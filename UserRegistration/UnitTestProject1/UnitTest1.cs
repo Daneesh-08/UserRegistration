@@ -15,7 +15,7 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.FirstName();
             //Assert
-            Assert.AreEqual("Entry Successfull", result);
+            Assert.AreEqual("Entry Successful", result);
         }
         [TestMethod]
         [DataRow("Sad")]
@@ -26,7 +26,7 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.FirstName();
             //Assert
-            Assert.AreEqual("Entry UnSuccessfull", result);
+            Assert.AreEqual("Entry Unsuccessful", result);
         }
         [TestMethod]
         [DataRow("Happy")]
@@ -37,7 +37,7 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.LastName();
             //Assert
-            Assert.AreEqual("Entry Successfull", result);
+            Assert.AreEqual("Entry Successful", result);
         }
         [TestMethod]
         [DataRow("Sad")]
@@ -48,7 +48,7 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.LastName();
             //Assert
-            Assert.AreEqual("Entry UnSuccessfull", result);
+            Assert.AreEqual("Entry Unsuccessful", result);
         }
         [TestMethod]
         [DataRow("Happy")]
@@ -59,7 +59,7 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.Email();
             //Assert
-            Assert.AreEqual("Entry Successfull", result);
+            Assert.AreEqual("Entry Successful", result);
         }
         [TestMethod]
         [DataRow("Sad")]
@@ -70,7 +70,7 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.Email();
             //Assert
-            Assert.AreEqual("Entry UnSuccessfull", result);
+            Assert.AreEqual("Entry Unsuccessful", result);
         }
         [TestMethod]
         [DataRow("Happy")]
@@ -81,7 +81,7 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.MobileNumber();
             //Assert
-            Assert.AreEqual("Entry Successfull", result);
+            Assert.AreEqual("Entry Successful", result);
         }
         [TestMethod]
         [DataRow("Sad")]
@@ -92,7 +92,7 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.MobileNumber();
             //Assert
-            Assert.AreEqual("Entry UnSuccessfull", result);
+            Assert.AreEqual("Entry Unsuccessful", result);
         }
         [TestMethod]
         [DataRow("Happy")]
@@ -103,7 +103,7 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.Password();
             //Assert
-            Assert.AreEqual("Entry Successfull", result);
+            Assert.AreEqual("Entry Successful", result);
         }
         [TestMethod]
         [DataRow("Sad")]
@@ -114,7 +114,17 @@ namespace UnitTestProject1
             //Act
             var result = userRegister.Password();
             //Assert
-            Assert.AreEqual("Entry UnSuccessfull", result);
+            Assert.AreEqual("Entry Unsuccessful", result);
+        }
+        [TestMethod]
+        public void TestMethod11()
+        {
+            //Arrange
+            UserRegister userRegister = new UserRegister();
+            //Act
+            var result = userRegister.MultipleEmails("abc@edu.co.in", "abc+100@gmail.com");
+            //Assert
+            Assert.AreEqual("Entry Successful", result);
         }
     }
 }
